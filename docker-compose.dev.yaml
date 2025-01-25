@@ -1,0 +1,14 @@
+﻿services:
+  clean-architecture.api:
+    depends_on:
+      - clean-architecture-database
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - "ConnectionStrings__DefaultConnection=USER ID=root;Password=password1@;Server=clean-architecture-database;Port=5432;Database=clean-architecture-database;Enlist=false;Read Buffer Size=34000;Command Timeout=300;"
+
+    ports:
+      - "8080:8080"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
