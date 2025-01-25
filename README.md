@@ -1,4 +1,3 @@
-```markdown
 # 🚀 .NET Clean Architecture Template  
 **Author**: Tai Tran - Software Engineer  
 
@@ -115,7 +114,6 @@ MIT License - See [LICENSE](LICENSE) for details
 
 **Let's Build Something Amazing!** 🚀  
 Contact: [Tai Tran](mailto:tai.tranhuu2002@gmail.com) | [GitHub Profile](https://github.com/taitranhuu2302)
-```
 
 This README features:
 - Clear visual hierarchy with emoji section markers
