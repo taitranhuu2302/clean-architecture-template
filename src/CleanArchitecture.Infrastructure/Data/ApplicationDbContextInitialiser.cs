@@ -63,10 +63,9 @@ public class ApplicationDbContextInitialiser
 		}
 	}
 
-	public async Task TrySeedAsync()
+	private async Task TrySeedAsync()
 	{
-		return;
+		await _context.SeedRoles();
+		await _context.SeedUsers();
 	}
-
-
 }

@@ -31,11 +31,12 @@ if (app.Environment.IsDevelopment())
 	app.UseCustomSwagger();
 }
 
+app.UseAuthentication();
+app.UseAuthorization();
 app.UseHealthChecks("/health");
 app.UseCors("webApi");
 app.UseHttpsRedirection();
 app.MapEndpoints();
-app.UseAuthorization();
 app.UseMiddleware<ErrorHandlerMiddleware>();
 
 app.InitialiseDatabaseAsync().Wait();
