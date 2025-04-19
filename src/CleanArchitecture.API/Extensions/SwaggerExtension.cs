@@ -12,9 +12,9 @@ public static class SwaggerExtension
 	{
 		services.AddOpenApiDocument(config =>
 		{
-			config.Title = "Dental API";
+			config.Title = "Clean Architecture API";
 			config.Version = "v1";
-			config.Description = "Dental Practic API";
+			config.Description = "Clean Architecture API";
 
 			config.AddSecurity("JWT", new NSwag.OpenApiSecurityScheme
 			{
